@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2, question 4, Seungwoo Kim</title>
+	<script>		
+		function buttonFunc(){
+			StringStats(document.getElementById("myTextarea").value);
+		}
+
+		// The question asks to write javascript function (StringStats) in head section. 
+		// The function StringStats 
+		function StringStats(str){
+			var x = str.split(/\s+/);
+			if (x == ""){
+				document.getElementById("result").innerHTML = "It is empty String!";
+			}			
+			else{
+				var res = "String Statistics: <br>";
+				for (i = 0;i<x.length;i++){
+					if (x[i] == "")
+						break;
+					count = 0;
+					y = x[i].split("");
+					for (j = 0; j<y.length;j++){
+						if (y[j].match(/[aieou]/i))
+							count++;
+					}
+					if (count ==1){
+						res += x[i] + " contains " + count + " vowel <br>";
+					}				
+					
+					else 
+						res += x[i] + " contains " + count + " vowels <br>";
+					 
+				}
+				document.getElementById("result").innerHTML = res;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		Question 4, Checking Javascript function called StringStats
+	</h1>
+
+	<!--
+		It is used as tester. 
+		For simplicity, I used textarea instead of text. It will give more space and make not a lot of differences.
+	-->
+	<textarea id="myTextarea" rows="4" cols="50" placeholder="Please enter the string you want to know how many vowels there are"></textarea>
+	<button type="button" onclick = "buttonFunc()">Click here to see the result</button>
+	
+	<!--
+		Displaying the result from function StringStats.  
+	-->
+	<div id = "result"></div>
+</body>
+</html>

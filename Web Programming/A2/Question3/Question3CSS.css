@@ -1,0 +1,19 @@
+/*
+	Basically, it will have the similar result as sample. 
+	What elements I use in the form is table, tr, td and button and I have used all. 
+*/
+table {
+    border-collapse: collapse;
+}
+table, td, tr {
+	border: 1px solid;
+	padding: 4px;
+}
+.block1 {
+	background-color: #FFC300;
+}
+
+button {
+	border: none;
+	font-size: 16px;
+}

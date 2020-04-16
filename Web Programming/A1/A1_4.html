@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 1, Question 4, Seungwoo Kim</title>
+	<style>
+	table{
+		table-layout: fixed;
+	}
+	#td1{
+		width:10%;
+	}
+	#td2{
+		width: 80%;
+	}
+	img {
+	width: 100%; 
+	height: 15%; 
+	background-image: url(https://image.freepik.com/free-vector/house-logo_23-2147507198.jpg); 
+	}
+	body {
+		background-color: yellow;
+	}
+	#field1{
+		background-color: #E0FFFF;
+		border-color: blue;
+	}
+	#field2{
+		background-color: #FFF5EE;
+		border-color: #D2B48C;
+	}
+	#legend1{
+		color: blue;
+	}
+	#legend2{
+		color:	#D2B48C;
+	}
+	label {
+		font-weight: bold;
+	}
+	.label1{
+		color: #00008B; /* #00008B is darker than blue (dark blue) */ 
+	}
+	.label2{
+		color: #b88747 ; /*darker than #D2B48C (tan) */
+	}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+		<td id="td1">
+			<div id="logoImage"><a href="https://image.freepik.com/free-vector/house-logo_23-2147507198.jpg"><img src="house_logo.jpg" alt="logo"></a></div>
+		</td>
+		<td id="td2">
+			<h1>Seungwoo Kim's Apartment Search Form</h1>
+		</td>
+		</tr>
+	</table>
+	<form>
+		<fieldset id="field1">
+			<legend id="legend1">Renter's Information</legend>
+			<label class = "label1"> How many people will live in the apartment? </label><input type="number" name="howmany">
+			<br>
+			<label class = "label1">Smoker? </label> <input type="radio" name="smoke"> Yes <input type="radio" name="smoke"> No <br>
+			<label class = "label1"> Any pets?</label> <br>
+			<input type="checkbox" name="pet"> Cat(s) <br>
+			<input type="checkbox" name="pet"> Dog(s) <br>
+			<input type="checkbox" name="pet"> Other <label class = "label1">Specify: </label><input type="text"> <br>
+			<input type="checkbox" name="pet"> No Pets <br>
+		</fieldset>
+
+		<fieldset id="field2">
+			<legend id="legend2">What are you looking for?</legend>
+			<label class = "label2">Size of apartment: </label> <br>
+			<input type="checkbox" name="size">Studio 
+			<input type="checkbox" name="size">3&frac12;  
+			<input type="checkbox" name="size">4&frac12;  
+			<input type="checkbox" name="size">5&frac12; 
+			<input type="checkbox" name="size">6&frac12;
+			<input type="checkbox" name="size">More than 6&frac12;  
+			<br>
+			<br>
+			<label class = "label2">Do you have preferred locations?</label> <br>
+			<input type="checkbox" name="locations">West Island
+			<input type="checkbox" name="locations">Downtown
+			<input type="checkbox" name="locations">Lower Westmount
+			<input type="checkbox" name="locations">NDG
+			<input type="checkbox" name="locations">East end of ISland
+			<input type="checkbox" name="locations">Don't care
+			<br>
+			<br>
+			<label class = "label2">Price Range/month:</label><br>
+			<select>
+				<option>less than $500</option>
+				<option>$500-$1000</option>
+				<option>$1000-$1500</option>
+				<option>No limit</option>
+			</select>
+
+			<br> <label class = "label2">Would be nice to have </label><br>
+			<input type="checkbox" name="optional">Yard
+			<input type="checkbox" name="optional">Laundromat in building
+			<input type="checkbox" name="optional">Garage
+			<input type="checkbox" name="optional">Elevator
+			<input type="checkbox" name="optional">Balcony
+		</fieldset>
+		<br>
+		Done? Let's check out <br> <br>
+		<input type="submit" name="Search" value="Search">
+		<input type="reset" name="reset" value="Start Over">
+	</form>
+
+	<br>
+	Clicking on the image lets you to direct where image is from
+</body>
+</html>

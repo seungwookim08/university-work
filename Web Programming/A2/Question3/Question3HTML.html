@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2, question 3, Seungwoo Kim</title>
+	<link rel="stylesheet" type="text/css" href ="Question3CSS.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<form>
+		<!--
+			making a table. Please check Question3CSS file as well
+		-->
+		<table>
+			<tr class="block1">
+				<td>Input String:</td>
+				<td><input type="text" id="str" placeholder="Please enter String here" /></td>
+			</tr>
+			<tr class="block2">
+				<td>Input Word:</td>
+				<td><input type="text" id="wrd" placeholder="Please enter Word here" /></td>
+			</tr>
+			<tr class="block1">
+				<td colspan="2"><button type="button" onclick = "myFunction()">Plot Histogram</button></td>
+			</tr>
+		</table>
+
+	</form>
+	<div id="graph"></div>
+	<script>
+		// Please note that the qeustion says that I can either use internal javascript or external javscript.
+		function myFunction(){
+			var x = document.getElementById('str').value.split("");
+			// unlike what is given in sample, we have to determine what will be the delimiter for graph.
+		    var y = document.getElementById('wrd').value.split("");
+			
+		    // remove duplicates (only contains unique values) in case if user put input word such as aaabcbc => becomes abc. 
+			y = Array.from(new Set(y));
+
+		    var z = [];
+		    // This for loop simply find only values in letters in input word.
+		    for (i = 0; i<x.length; i++){
+		    	for (j = 0; j<y.length;j++){
+		    		if (y[j]==x[i])
+		    			z.push(x[i]); 
+		    	}
+		    }
+			var histElements = {
+				x: z,
+				type: 'histogram',
+				//opacity: 0.5,
+				marker: {color: '#FFC300',},
+			};
+			var layout = {
+			  bargap: 0.05, 
+			  bargroupgap: 0.5, 
+			  barmode: "overlay", 
+			  title: "Histogram", 
+			  xaxis: {title: "Values",}, 
+			  yaxis: {title: "Count"},			  
+			};
+			var data = [histElements];
+			//Using ID for div to plot the graph
+			Plotly.newPlot('graph', data, layout);
+		}
+
+     </script>
+	<div id="graph"></div>
+
+</body>
+</html>

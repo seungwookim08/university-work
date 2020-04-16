@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2, question 1, Seungwoo Kim</title>
+
+</head>
+	<body>
+
+		<form id="frm1">
+			Input value: <input type="text" id= "input1" placeholder="Enter withdrwal amount"/><br>
+		  	<button onclick="validateAmount()">Try it</button>
+		</form> 
+
+		<p id="demo"></p>
+
+		<script>
+		obj = {balance:500, bankCharge: 0.5}
+		function validateAmount() {
+			
+	    	x = parseFloat(document.getElementById("input1").value);
+	    	if (isNaN(x)){	    		
+	    		alert("Please enter numeric value");	    		
+	    	} else {
+	    		withdrawAmount();
+
+	    	}
+		}
+		function withdrawAmount() {
+			if ((x%20) != 0)
+				alert("Incorrect withdrwal amount");
+			else if (obj.balance < (x+obj.bankCharge))
+				alert("Insufficient funcds");
+			else{
+				obj.balance -= (x + obj.bankCharge);
+				alert("Successful transaction! \n Current Balance is:" + obj.balance);
+			}
+			return false;	
+		}
+				
+		
+		</script>
+
+		</body>
+</html>

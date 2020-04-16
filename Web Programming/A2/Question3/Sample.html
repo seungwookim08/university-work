@@ -1,0 +1,40 @@
+<!-- Sample Code to plot Histogram using Javascript
+	 Course: SOEN 287/Winter 2018
+	 Assignment 2
+	 Written by: Kaustubha Mendhurwar
+-->
+<html>
+	<head>
+		<!--Include the java library for plotly-->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+    	<!-- Plotly chart will be drawn inside this DIV -->
+        <div id="graph"></div>
+        <script>
+        	//You can easily use numbers in x 
+	        var x = "aabccddddeeffb".split("");
+	        //Uncomment for the number version
+	        //var x = [2,5,6,3,4,2,3,4,2,3,4,5];
+	        //Uncoment for word version
+			//var x = ["helo", "hello", "helo", "hi", "what"];
+			var histElements = {
+				x: x,
+				type: 'histogram',
+				//opacity: 0.5,
+				marker: {color: '#FFC300',},
+			  };
+			var layout = {
+			  bargap: 0.05, 
+			  bargroupgap: 0.5, 
+			  barmode: "overlay", 
+			  title: "Histogram", 
+			  xaxis: {title: "Values",}, 
+			  yaxis: {title: "Count"},			  
+			};
+			var data = [histElements];
+			//Using ID for div to plot the graph
+			Plotly.newPlot('graph', data, layout);
+        </script>
+    </body>
+</html>

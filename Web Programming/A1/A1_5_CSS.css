@@ -1,0 +1,70 @@
+body{
+	background-image: url("seal.jpg"); 
+}
+#header,table{
+	margin: 50px;
+}
+#header{
+	width: 500px;	
+	padding: 20px;
+	color: red;
+	background-color: #F0FFFF;
+	border : 15px solid red;
+}
+table{
+	border: 15px dotted yellow;
+}	
+th{
+	background-color: #FAEBD7;
+	color:blue;
+	
+}	
+#animal1{
+	background-color: #00FFFF;
+	border: 10px solid blue;
+}
+#animal2{
+	background-color: #DEB887;
+	border: 10px solid brown;
+}
+#description1{
+	background-color: #FF7F50;
+	border: 10px solid red;
+}
+#description2{
+	background-color: #6495ED;
+	border: 10px solid #483D8B;
+}
+#column1,#column2{
+	padding:10px;
+}
+#column1{
+	width:160px;
+}
+#column2{
+	width:340px;
+}
+.ol1{
+	list-style-type: upper-roman;
+}
+.ol3{
+	list-style-type: armenian;
+}
+.ul1{
+	list-style-image: url(smallimage1.png);	
+}
+.ul2{
+	color: red;
+}
+.ul3{
+	color: #483D8B;
+}
+.ul4{
+	list-style-image: url(smallimage2.jpg);
+}
+#note{
+	text-indent: 50px;
+	color:red;
+	font-weight: bold;
+	font-size: 20px;
+}

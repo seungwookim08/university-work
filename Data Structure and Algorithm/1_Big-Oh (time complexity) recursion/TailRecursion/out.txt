@@ -1,0 +1,19 @@
+Tail Recursion Fibonacci time record :
+Fibonnaci (5) time record : 2103 ns. Fibonacci 5 number is 5.
+Fibonnaci (10) time record : 601 ns. Fibonacci 10 number is 55.
+Fibonnaci (15) time record : 601 ns. Fibonacci 15 number is 610.
+Fibonnaci (20) time record : 601 ns. Fibonacci 20 number is 6765.
+Fibonnaci (25) time record : 601 ns. Fibonacci 25 number is 75025.
+Fibonnaci (30) time record : 901 ns. Fibonacci 30 number is 832040.
+Fibonnaci (35) time record : 3004 ns. Fibonacci 35 number is 9227465.
+Fibonnaci (40) time record : 1202 ns. Fibonacci 40 number is 102334155.
+Fibonnaci (45) time record : 1201 ns. Fibonacci 45 number is 1134903170.
+Fibonnaci (50) time record : 5709 ns. Fibonacci 50 number is 12586269025.
+Fibonnaci (55) time record : 1803 ns. Fibonacci 55 number is 139583862445.
+Fibonnaci (60) time record : 2404 ns. Fibonacci 60 number is 1548008755920.
+Fibonnaci (65) time record : 1803 ns. Fibonacci 65 number is 17167680177565.
+Fibonnaci (70) time record : 5409 ns. Fibonacci 70 number is 190392490709135.
+Fibonnaci (75) time record : 2404 ns. Fibonacci 75 number is 2111485077978050.
+Fibonnaci (80) time record : 2704 ns. Fibonacci 80 number is 23416728348467685.
+Fibonnaci (85) time record : 2404 ns. Fibonacci 85 number is 259695496911122585.
+Fibonnaci (90) time record : 2705 ns. Fibonacci 90 number is 2880067194370816120.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 1, Question 3, Seungwoo Kim</title>
+</head>
+<body>
+	<h1>Seungwoo Kim's Apartment Search Form</h1>
+	<form>
+		<fieldset id="field1">
+			<legend id="legend1">Renter's Information</legend>
+			<label> How many people will live in the apartment? </label><input type="number" name="howmany">
+			<br>
+			<label>Smoker? </label> <input type="radio" name="smoke"> Yes <input type="radio" name="smoke"> No <br>
+			<label> Any pets?</label> <br>
+			<input type="checkbox" name="pet"> Cat(s) <br>
+			<input type="checkbox" name="pet"> Dog(s) <br>
+			<input type="checkbox" name="pet"> Other <label>Specify: </label><input type="text"> <br>
+			<input type="checkbox" name="pet"> No Pets <br>
+		</fieldset>
+
+		<fieldset id="field2">
+			<legend id="legend2">What are you looking for?</legend>
+			<label>Size of apartment: </label><br>
+			<input type="checkbox" name="size">Studio 
+			<input type="checkbox" name="size">3&frac12;  
+			<input type="checkbox" name="size">4&frac12;
+			<input type="checkbox" name="size">5&frac12; 
+			<input type="checkbox" name="size">6&frac12;
+			<input type="checkbox" name="size">More than 6&frac12;  
+			<br>
+			<br>
+			<label>Do you have preferred locations?</label> <br>
+			<input type="checkbox" name="locations">West Island
+			<input type="checkbox" name="locations">Downtown
+			<input type="checkbox" name="locations">Lower Westmount
+			<input type="checkbox" name="locations">NDG
+			<input type="checkbox" name="locations">East end of ISland
+			<input type="checkbox" name="locations">Don't care
+			<br>
+			<br>
+			<label>Price Range/month:</label><br>
+			<select>
+				<option>less than $500</option>
+				<option>$500-$1000</option>
+				<option>$1000-$1500</option>
+				<option>No limit</option>
+			</select>
+
+			<br> <label>Would be nice to have </label><br>
+			<input type="checkbox" name="optional">Yard
+			<input type="checkbox" name="optional">Laundromat in building
+			<input type="checkbox" name="optional">Garage
+			<input type="checkbox" name="optional">Elevator
+			<input type="checkbox" name="optional">Balcony
+		</fieldset>
+		<br>
+		Done? Let's check out <br> <br>
+		<input type="submit" name="Search" value="Search">
+		<input type="reset" name="reset" value="Start Over">
+	</form>
+</body>
+</html>

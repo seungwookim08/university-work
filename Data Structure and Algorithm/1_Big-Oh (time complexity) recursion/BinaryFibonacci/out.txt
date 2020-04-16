@@ -1,0 +1,9 @@
+Binary Fibonacci time record :
+Fibonnaci (5) time record : 2404 ns. Fibonacci 5 number is 5.
+Fibonnaci (10) time record : 3305 ns. Fibonacci 10 number is 55.
+Fibonnaci (15) time record : 56789 ns. Fibonacci 15 number is 610.
+Fibonnaci (20) time record : 237070 ns. Fibonacci 20 number is 6765.
+Fibonnaci (25) time record : 495174 ns. Fibonacci 25 number is 75025.
+Fibonnaci (30) time record : 2257428 ns. Fibonacci 30 number is 832040.
+Fibonnaci (35) time record : 22718511 ns. Fibonacci 35 number is 9227465.
+Fibonnaci (40) time record : 246864975 ns. Fibonacci 40 number is 102334155.
